@@ -17,6 +17,7 @@ function encrypt() {
                                 .replaceAll('o','ober')
                                 .replaceAll('u','ufat');
         txtResponse.innerHTML = response;
+        txtArea.value = "";
         areaResponse.classList.add('response');
         return response;
     }
@@ -31,6 +32,7 @@ function decrypt() {
                                     .replaceAll('ober','o')
                                     .replaceAll('ufat','u');
         txtResponse.innerHTML = response;
+        txtArea.value = "";
         areaResponse.classList.add('response');
         return response;
     }
