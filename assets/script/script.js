@@ -18,6 +18,7 @@ function encrypt() {
                                 .replaceAll('u','ufat');
         txtResponse.innerHTML = response;
         txtArea.value = "";
+        btnCopy.style.display = "block"
         areaResponse.classList.add('response');
         return response;
     }
@@ -33,6 +34,7 @@ function decrypt() {
                                     .replaceAll('ufat','u');
         txtResponse.innerHTML = response;
         txtArea.value = "";
+        btnCopy.style.display = "block"
         areaResponse.classList.add('response');
         return response;
     }
