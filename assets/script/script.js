@@ -43,4 +43,7 @@ function decrypt() {
 
 function copy() {    
     navigator.clipboard.writeText(txtResponse.innerText)
+    alert("Texto Copiado!")
+    location.reload()
+    
 }

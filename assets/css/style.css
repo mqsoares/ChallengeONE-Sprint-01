@@ -59,6 +59,10 @@ textarea {
     cursor: pointer;
 }
 
+.btn:hover {
+    opacity: 0.5;
+}
+
 #btnEncrypt {
     background-color: #0A3871;
     color: #FFF;
