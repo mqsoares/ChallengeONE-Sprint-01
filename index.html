@@ -13,25 +13,26 @@
     </header>
     <main>
         <section>
-            <textarea class="txtCriptografar" placeholder="Digite seu texto" ></textarea>
+            <textarea class="txtArea" placeholder="Digite seu texto" rols = "10"></textarea>
             <div>
-                <div id="aviso">
+                <div id="alertLegend">
                     <img src="./assets/img/alert.png" alt="logo de aviso">
                     <p>Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="btns">
-                    <button id="btnCriptografar">Criptografar</button>
-                    <button id="btnDescriptografar" >Descriptografar</button>
+                    <button id="btnEncrypt" class="btn">Criptografar</button>
+                    <button id="btnDecrypt" class="btn">Descriptografar</button>
                 </div>
             </div> 
         </section>
-        <section>
-            <div class="txtDescriptografar">
+        <section class="areaResponse">
+            <div class="txtResponse">
                 <img src="./assets/img/search.svg" alt="Foto de uma pesquisador com uma lupa">
-                <p>Nenhuma mensagem encontrada</p>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
-
+                <div>
+                    <p>Nenhuma mensagem<br> encontrada</p>
+                    <p>Digite um texto que você deseja<br> criptografar ou descriptografar.</p>
+                </div>
+            </div>            
         </section>
     </main>
   <script src="./assets/js/script.js"></script>
