@@ -5,8 +5,9 @@ const btnCopy = document.querySelector('#btnCopy')
 const txtResponse = document.querySelector('.txtResponse');
 const txtArea = document.querySelector('.txtArea');
 
-btnEncrypt.addEventListener('click', encrypt)
-btnDecrypt.addEventListener('click', decrypt)
+btnEncrypt.addEventListener('click', encrypt);
+btnDecrypt.addEventListener('click', decrypt);
+btnCopy.addEventListener('click', copy);
 
 function encrypt() {
     if( txtArea.value.length > 0) {
@@ -18,7 +19,7 @@ function encrypt() {
                                 .replaceAll('u','ufat');
         txtResponse.innerHTML = response;
         txtArea.value = "";
-        btnCopy.style.display = "block"
+        btnCopy.style.display = "block";
         areaResponse.classList.add('response');
         return response;
     }
@@ -26,16 +27,20 @@ function encrypt() {
 
 function decrypt() {
     if (txtArea.value.length > 0) {
-        const txtEncypt = txtArea.value;
-        const response = txtEncypt.replaceAll('enter', 'e')
+        const txtDncypt = txtArea.value;
+        const response = txtDncypt.replaceAll('enter', 'e')
                                     .replaceAll('imes', 'i')
                                     .replaceAll('ai','a')
                                     .replaceAll('ober','o')
                                     .replaceAll('ufat','u');
         txtResponse.innerHTML = response;
         txtArea.value = "";
-        btnCopy.style.display = "block"
+        btnCopy.style.display = "block";
         areaResponse.classList.add('response');
         return response;
     }
+}
+
+function copy() {    
+    navigator.clipboard.writeText(txtResponse.innerText)
 }
