@@ -113,3 +113,70 @@ textarea {
 #btnCopy {
     display: none;
 }
+
+@media (max-width: 1330px) {
+    body {
+        gap: 0;
+    }
+}
+
+@media (max-width: 1220px) {
+    body {
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 73px 40px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    textarea {
+        margin-top: 30px;
+    }
+
+    .txtResponse img {
+        display: none;
+    }
+
+    .areaResponse {
+        width: 680px;
+        height: auto;
+    }
+
+    .areaResponse.response {
+        max-width: 680px;
+    }
+
+    #btnCopy {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 765px) {
+    #alertLegend {
+        justify-content: center;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 90vw;
+    }
+
+    .areaResponse {
+        width: 90vw;
+    }
+
+    .areaResponse.response {
+        max-width: 90vw;
+    }
+}
